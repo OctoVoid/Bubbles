@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Files\background.jpg" />
+    <None Remove="Files\bubble1.png" />
+    <None Remove="Files\bubble2.png" />
+    <None Remove="Files\bubble3.png" />
+    <None Remove="Files\bubble4.ico" />
+    <None Remove="Files\bubble4.png" />
+    <None Remove="Files\mainMenu.png" />
+    <None Remove="Files\newgameOff.png" />
+    <None Remove="Files\newgameOn.png" />
+    <None Remove="Files\playOff.png" />
+    <None Remove="Files\playOn.png" />
+    <None Remove="Files\pop.mp3" />
+    <None Remove="Files\quitOff.png" />
+    <None Remove="Files\quitOn.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Files\background.jpg" />
+    <Resource Include="Files\bubble1.png" />
+    <Resource Include="Files\bubble2.png" />
+    <Resource Include="Files\bubble3.png" />
+    <Resource Include="Files\bubble4.ico" />
+    <Resource Include="Files\bubble4.png" />
+    <Resource Include="Files\mainMenu.png" />
+    <Resource Include="Files\newgameOff.png" />
+    <Resource Include="Files\newgameOn.png" />
+    <Resource Include="Files\playOff.png" />
+    <Resource Include="Files\playOn.png" />
+    <Resource Include="Files\pop.mp3" />
+    <Resource Include="Files\quitOff.png" />
+    <Resource Include="Files\quitOn.png" />
+  </ItemGroup>
+
+</Project>

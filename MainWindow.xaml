@@ -1,0 +1,16 @@
+﻿<Window x:Class="Bubbles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bubbles"
+        mc:Ignorable="d"
+        Title="Bubbles" Height="600" Width="450" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="Files/bubble4.ico">
+    <Canvas Name="MyCanvas" Focusable="True" MouseLeftButtonDown="PopBubble" Cursor="Hand">
+        <Canvas.Background>
+            <ImageBrush/>
+        </Canvas.Background>
+        <Label FontSize="24" FontFamily="Cooper" Foreground="SkyBlue" Name="scoreText" Content="Score: 0" FontWeight="ExtraBold" HorizontalAlignment="Center" Canvas.Top="491" VerticalAlignment="Top"/>
+        <Label FontSize="24" FontFamily="Cooper" Foreground="SkyBlue" Name="missedBubblesText" Content="Missed bubbles: 0" FontWeight="ExtraBold" HorizontalAlignment="Center" Canvas.Top="518" VerticalAlignment="Top"/>
+    </Canvas>
+</Window>

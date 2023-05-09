@@ -1,0 +1,19 @@
+﻿<Window x:Class="Bubbles.gameOver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bubbles"
+        mc:Ignorable="d"
+        Title="Bubbles" Height="600" Width="450" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="Files/bubble4.ico">
+    <Canvas Name="MyCanvas" Focusable="True" Cursor="Hand">
+        <Canvas.Background>
+            <ImageBrush/>
+        </Canvas.Background>
+        <Label FontSize="56" FontFamily="Cooper" Foreground="Pink" Name="gameOverText" Content="GAME OVER" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Width="440" Canvas.Top="109"/>
+        <Label FontSize="36" FontFamily="Cooper" Foreground="Pink" Name="uMissedText" Content="You missed 10 bubbles." FontWeight="ExtraBold" HorizontalContentAlignment="Center" Width="440" Canvas.Top="188"  />
+        <Label FontSize="30" FontFamily="Cooper" Foreground="Pink" Name="uScoredText" Content="Your score was: " FontWeight="ExtraBold" HorizontalAlignment="Center" Canvas.Top="239" VerticalAlignment="Top" Canvas.Left="63"/>
+        <Image Name="newGameButton" Source="Files/newGameOff.png" Height="72" Width="324" Canvas.Left="58" Canvas.Top="342" HorizontalAlignment="Center" VerticalAlignment="Center" MouseEnter="OnMouseEnterNew" MouseLeave="OnMouseLeaveNew" MouseDown="OnClickNew" />
+        <Image Name="quitButton" Source="Files/quitOff.png" Height="58" Width="147" Canvas.Left="149" Canvas.Top="419" HorizontalAlignment="Left" VerticalAlignment="Center" MouseEnter="OnMouseEnterQuit" MouseLeave="OnMouseLeaveQuit" MouseDown="OnClickQuit" />
+    </Canvas>
+</Window>
